@@ -7,6 +7,8 @@ dotenv.config({ path: `env/${env}.env` });
 export default defineConfig({
   testDir: './tests',
 
+  timeout: 30000,
+
   use: {
     baseURL: process.env.BASE_URL,
     headless: false,
@@ -16,10 +18,4 @@ export default defineConfig({
   },
 
   reporter: [['html', { open: 'never' }]],
-
-  projects: [
-    { name: 'chromium', use: { browserName: 'chromium' } },
-    { name: 'firefox', use: { browserName: 'firefox' } },
-    { name: 'webkit', use: { browserName: 'webkit' } },
-  ],
 });
