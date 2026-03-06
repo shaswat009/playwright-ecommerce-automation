@@ -4,7 +4,7 @@ import LoginPage from '../../pages/login.page.js';
 import ProductsPage from '../../pages/products.page.js';
 import CartPage from '../../pages/cart.page.js';
 
-test('TC_ECOM_05 - Remove product from cart', async ({ page }) => {
+test('@regression TC_ECOM_05 - Remove product from cart', async ({ page }) => {
 
   const login = new LoginPage(page);
   const product = new ProductsPage(page);

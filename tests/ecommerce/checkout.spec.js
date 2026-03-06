@@ -5,7 +5,7 @@ import ProductsPage from '../../pages/products.page.js';
 import CartPage from '../../pages/cart.page.js';
 import CheckoutPage from '../../pages/checkout.page.js';
 
-test('TC_ECOM_04 - Checkout product', async ({ page }) => {
+test('@smoke @regression TC_ECOM_04 - Checkout product', async ({ page }) => {
 
   const login = new LoginPage(page);
   const product = new ProductsPage(page);
